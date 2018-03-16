@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Details for Update Page
+	</title>
+	<script type="text/javascript">
+		function valid()
+		{
+			if(document.sign.Name.value=="")
+			{	
+				alert("enter the name");
+				document.sign.Name.focus();
+				return false;
+			}
+			if(document.sign.Usn.value=="")
+			{	
+				alert("enter the usn");
+				document.sign.Usn.focus();
+				return false;
+			}
+			if(document.sign.branch.value=="-----------select-----------")
+			{	
+				alert("select the branch");
+				document.sign.branch.focus();
+				return false;
+			}	
+			if(document.sign.sub.value=="")
+			{	
+				alert("enter the subject code");
+				document.sign.sub.focus();
+				return false;
+			};
+			return true;
+		}
+	</script>
+</head>
+<body bgcolor="silver">
+	<center>
+		<h2>Enter the details</h2>
+	
+
+	<form action="update.php" method="post" name="sign" onsubmit="return(valid());">
+	<font size="5">
+	<table>
+		<tr>
+			<td>
+				Name:
+			</td>
+			<td>
+				<input type="text" name="Name" placeholder="Enter The Name">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Usn:
+			</td>
+			<td>
+				<input type="text" name="Usn" placeholder="Enter USN"><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Select Sem:
+			</td>
+			<td>	
+				<select name="sem">
+				<OPTION VALUE="-1" SELECTED><h3>-----------select-----------</h3></OPTION>
+				<option name="first">first_sem</option>
+				<OPTION name="second">second_sem</option>
+				<option name="second">third_sem</option>
+				<option name="third">fourth_sem</option>
+				<option name="fourth">fifth_sem</option>
+				<option name="fifth">sixth_sem</option>
+				<option name="sixth">seventh_sem</option>
+				<option name="seventh">eighth_sem</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Enter Subject Code:
+			</td>
+			<td>
+				<input type="text" name="Sub" placeholder="Enter USN"><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+
+				Enter Marks:
+			</td>
+			<td>	
+				<input type="text" name="Marks" placeholder="Enter USN"><br>
+			</td>
+		</tr>
+	</table>
+
+</font>
+	<input type="submit" value="submit">
+	<input type="reset" value="clear">
+	</form>
+</center>
+</body>
+</html>

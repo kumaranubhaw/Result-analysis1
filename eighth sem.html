@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>eighth sem result</title>
+<center>
+<h1>Eighth Semester Result</h1>
+</head>
+<script type="text/javascript">
+		function valid()
+		{
+			if(document.sign.Name.value=="")
+			{	
+				alert("enter the name");
+				document.sign.Name.focus();
+				return false;
+			}
+			if(document.sign.Usn.value=="")
+			{	
+				alert("enter the usn");
+				document.sign.Usn.focus();
+				return false;
+			};
+			/*if(document.sign.branch.value=="-----------select-----------")
+			{	
+				alert("select the branch");
+				document.sign.branch.focus();
+				return false;
+			}	
+			if(document.sign.sub.value=="")
+			{	
+				alert("enter the subject code");
+				document.sign.sub.focus();
+				return false;
+			}*/
+			return true;
+		}
+	</script>
+</head>
+<body bgcolor="silver">
+	<center>
+		<h2>Enter the details</h2>
+	</center>
+
+	<form action="result8.php" method="post" name="sign" onsubmit="return(valid());">
+	<font size="5">
+	<table>
+		<tr>
+			<td>
+				Name:
+			</td>
+			<td>
+				<input type="text" name="Name" placeholder="Enter The Name">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Usn:
+			</td>
+			<td>
+				<input type="text" name="Usn" placeholder="Enter USN"><br>
+			</td>
+		</tr>
+	</table>
+</font>
+	<input type="submit" value="submit">
+	<input type="reset" value="clear">
+	</form>
+
+</body>
+</html>

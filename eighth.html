@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Details for Insertion Page
+	</title>
+	<script type="text/javascript">
+		function valid()
+		{
+			if(document.sign.Name.value=="")
+			{	
+				alert("enter the name");
+				document.sign.Name.focus();
+				return false;
+			}
+			if(document.sign.Usn.value=="")
+			{	
+				alert("enter the usn");
+				document.sign.Usn.focus();
+				return false;
+			};
+			/*if(document.sign.branch.value=="-----------select-----------")
+			{	
+				alert("select the branch");
+				document.sign.branch.focus();
+				return false;
+			}	
+			if(document.sign.sub.value=="")
+			{	
+				alert("enter the subject code");
+				document.sign.sub.focus();
+				return false;
+			};*/
+			return true;
+		}
+	</script>
+</head>
+<body bgcolor="silver">
+	<center>
+		<font color="red">
+		<h1>Enter The Details</h1>
+</font>
+		
+
+	<form action="insert8.php" method="post" name="sign" onsubmit="return(valid());">
+	<font size="5">
+	<table>
+		<tr>
+			<td>
+	    		Name:
+	    	</td>
+	    	<td>
+	    		<input type="text" name="Name" placeholder="Enter The Name">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Usn:
+			</td>
+			<td>
+				<input type="text" name="Usn" placeholder="Enter USN"><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Enter Marks For Subject1:
+			</td>
+			<td>
+				<input type="text" name="Marks1" placeholder="Enter Marks1"><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Enter Marks For Subject2:
+			</td>
+			<td>
+				<input type="text" name="Marks2" placeholder="Enter Marks2"><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+
+				Enter Marks For Subject3:
+			</td>
+			<td>
+				<input type="text" name="Marks3" placeholder="Enter Marks3"><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Enter Marks For Subject4:
+			</td>
+			<td>
+				<input type="text" name="Marks4" placeholder="Enter Marks4"><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Enter Marks For Subject5:
+			</td>
+			<td>
+				<input type="text" name="Marks5" placeholder="Enter Marks5"><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+
+				Enter Marks For Subject6:
+			</td>
+			<td>
+				<input type="text" name="Marks6" placeholder="Enter Marks6"><br>
+			</td>
+		</tr>
+</table>
+</font>
+	</br>
+	<input type="submit" value="submit">
+	<input type="reset" value="clear"><br />
+	</div>
+	</form>
+</center>
+</body>
+</html>

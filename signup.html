@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up</title>
+	<style>
+		table,th,td,tr{
+			border-collapse: 6px;
+			border-spacing: 2px;
+			padding: 0px;
+			border-color: green;
+			text-align: left;
+			border-radius: 15px;
+			border-color: blue;
+			margin-left: 400px;
+			
+
+
+
+			
+		}
+		tr,td{
+			padding: 0px;
+			color: teal;
+			border-spacing: 30px;
+		}
+		header{
+			background-color: lightpink;
+			clear: both;
+			color: white;
+			padding: 70px;
+			width: 1270px;
+			text-indent: 0px;
+			border-collapse: 0px;
+			border-spacing: 0px;
+			text-align: center;
+			margin-top: 0px;
+			
+			padding-top: 00px;
+
+			}
+
+		footer{
+			background-color: deeppink;
+			clear: both;
+			text-align: center;
+			color: white;
+			padding: 0px;
+			height: 45px;
+		}
+
+	</style>
+<body bgcolor="silver">
+<script type="text/javascript">
+	
+	function valid()
+		{
+			if(document.sign.Fname.value=="")
+			{	
+				alert("enter the first name");
+				document.sign.Fname.focus();
+				return false;
+			}
+			if(document.sign.Lname.value=="")
+			{	
+				alert("enter the last name");
+				document.sign.Lname.focus();
+				return false;
+			}
+			if(document.sign.usn.value=="")
+			{	
+				alert("enter the usn");
+				document.sign.usn.focus();
+				return false;
+			}
+			if (document.sign.uid.value=="") 
+			{
+				alert("enter the user id");
+				document.sign.uid.focus();
+				return false;		
+			}
+			if (document.sign.email.value=="") 
+			{
+				alert("enter valid Email-id");
+				document.sign.email.focus();	
+				return false;
+			}
+			if (document.sign.paswd1.value=="") 
+			{
+				alert("enter password");
+				document.sign.paswd1.focus();	
+				return false;
+			}
+			if(document.sign.dob.value=="")
+			{	
+				alert("enter the date of birth");
+				document.sign.dob.focus();
+				return false;
+			}
+			if (document.sign.paswd.value=="") 
+			{
+				alert("re-enter password");
+				document.sign.paswd.focus();	
+				return false;
+			};
+			/*if (document.sign.paswd.value==document.sign.paswd1.value) 
+			{
+				alert("re entered password is incorect");
+				document.sign.paswd.focus();	
+				return false;
+			};*/
+			return true;
+		}
+
+</script>
+
+
+<font size="8" color="red"><center> Enter the details for Sign up</center></font>
+
+<form action="signup.php" name="sign" onsubmit="return(valid());">
+		<table style="border-spacing:10px;">
+			
+				<tr>
+					<td>Firstname:</td>
+					<td><input type="text" placeholder="firstname" name="Fname"></td>
+					<td>Lastname:</td>
+					<td><input type="text" placeholder="Lastname" name="Lname"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>gender:</td>
+					<td><input type="radio" name="sex" value="male">Male</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="radio" name="sex" value="female">Female</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Email-id:</td>
+					<td><input type="email" placeholder="examale@domain.com" name="email" ></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>date of birth:</td>
+					<td><input type="date" placeholder="DOB" name="dob"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Usn:</td>
+					<td><input type="text" placeholder="USN" name="usn"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>User Id:</td>
+					<td><input type="text" placeholder="User Id" name="uid"></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					
+						<td>Enter your location:</td>
+						<td><select name="state">
+							<option value="select">-select-</option>
+							<option value="bangalore">bangalore</option>
+							<option value="kolkatta">kolkatta</option>
+							<option value="delhi">delhi</option>
+							<option value="mumbai">mumbai</option>
+							<option value="patna">patna</option>
+							</select></td>
+							<td></td>
+							<td></td>
+				</tr>
+				<tr>
+					
+						<td>Enter Password:</td>
+						<td><input type="password" name="paswd1" placeholder="Enter Password">
+						
+		</td>
+		</tr>
+		</table>
+		<table align=center>
+				<tr>
+					<td><input type="submit" value="submit"></td>
+					<td>
+						<input type="reset" value="reset"></td>
+						
+				</tr>
+				
+		</table>
+	</form>
+</function>
+</body>
+</html>

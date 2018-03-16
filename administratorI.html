@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Administrator Login page</title>
+<center>
+<h1>Administrator Login</h1>
+</center>
+<script type="text/javascript">
+function validate()
+{
+var nam = document.my.Name.value;
+var pswd = document.my.pwd.value;
+if(nam == "anubhaw" && pswd == "singh" || nam =="ashutos" && pswd=="sukla" || nam=="anubhaw" && pswd=="kumar")
+	{
+	//alert("enter valid id");
+	return true;
+	}
+	else
+	{
+	alert("please input correct user name/pasword");
+	return false;
+	}
+}
+</script>
+</head>
+<img src="photo/d.jpg" height=100 > 
+<img src="photo/c.jpg" align="right" height=100 width=100>
+<center>
+<body bgcolor="silver">
+<form action="detailsI.html" name="my" onsubmit="return(validate());">
+<font size=5>
+<table align="center">
+	<tr>
+		<td>
+			User Name:
+		</td>
+		<td>
+			<input type="text" name="Name" id="Name" size=25 placeholder="enter user name">
+		</td>
+	</tr>
+	<tr>
+		<td>
+
+			Password:
+		</td>
+		<td>
+			<input type="password" name="pwd" size=25 placeholder="password">
+		</td>
+	</tr>
+	<tr><td></td><td></td></tr>
+	<tr>
+		<td>
+			<input type="submit" name="login" value="login">
+		</td>
+		<td>
+			<input type="reset" name="clear" value="reset">
+		</td>
+	</tr>
+</table>
+</valign>
+</font>
+</form>
+</center>
+</html>
